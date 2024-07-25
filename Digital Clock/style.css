@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.container {
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 80px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after {
+
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#HRS::after{
+    content: 'HRS';
+}
+#MIN::after{
+    content: 'MIN';
+}
+#SEC::after{
+    content: 'SEC';
+}
